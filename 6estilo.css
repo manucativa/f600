@@ -49,10 +49,10 @@ header {
 }
 
 ul.navbar-nav.links.container-fluid {
-  width: 35rem;
+  width: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
@@ -67,7 +67,8 @@ body {
 /* -----------------------------INDEX------------------------------------------------ */
 
 .bodyPrincipal {
-  background: #e60009;
+  background-image: url("images/15172169099255.jpg");
+  background-size: 25rem;
   margin-top: 5vh;
   font-family: "Koulen", cursive;
 }
@@ -143,9 +144,8 @@ body {
   grid-area: tabla;
   text-align: center;
   background-color: black;
-  border: solid white;
   font-size: 1.25rem;
-	
+  border: solid white;
 }
 
 .video1 {
@@ -160,10 +160,11 @@ body {
   grid-area: video3;
 }
 
-th{
-  font-size: larger;
+th {
+  font-size: 2rem;
+  color: #ffffff;
   text-align: center;
-  
+  -webkit-text-stroke: 0.01px #000000
 }
 
 /* ---------------------------FOTOS-------------------------------------------------- */
@@ -175,22 +176,15 @@ th{
   overflow-x: hidden;
 }
 
-.fotos img {
-  opacity: 0.25;
-}
-
-.fotos img:hover {
-  opacity: 1;
-  border: #e60009 solid 2.5px;
-}
-
 /* ------------------------------HISTORIA----------------------------------------------- */
 
 .bodyHistoria {
-  margin-top: 10vh;
+  margin-top: 15vh;
   background: #000000;
   background-size: cover;
   font-family: "Koulen", cursive;
+  background-image: url("images/15172169099255.jpg");
+  background-size: 25rem;
 }
 
 .historia {
@@ -205,11 +199,13 @@ th{
 }
 
 .textoHistoria {
+  padding: 1rem;
   margin: 1rem;
   grid-area: textoHistoria;
   text-align: justify;
   font-size: 1.25rem;
   color: rgb(255, 255, 255);
+  background-color: #000000;
 }
 
 .textoHistoria h1 {
@@ -229,11 +225,13 @@ th{
 }
 
 .bioHistoria {
+  padding: 1rem;
   grid-area: bioHistoria;
   margin: 1rem;
   text-align: justify;
   font-size: 1.25rem;
   color: rgb(255, 255, 255);
+  background-color: #000000;
 }
 
 .bioHistoria h1 {
@@ -299,7 +297,7 @@ footer img:hover {
 
   .links li a:hover {
     color: #e60009;
-    text-decoration: overline #e60009;
+    text-decoration:  #e60009;
   }
 
   ul.navbar-nav.links.container-fluid {
@@ -311,8 +309,10 @@ footer img:hover {
   /* -----------------------------INDEX------------------------------------------------ */
 
   .bodyPrincipal {
-    background: #e60009;
+    background-image: url("images/15172169099255.jpg");
+  background-size: 25rem;
     font-family: "Koulen", cursive;
+    overflow-x: hidden;
   }
 
   .imagenPrincipal {
@@ -321,19 +321,21 @@ footer img:hover {
 
   .imagenPrincipal img {
     position: relative;
-    top: 30vh;
-    width: 70vh;
+    top: 20vh;
+    width: 100vh;
     margin: 2vw -26vw;
+    
   }
 
   /* -------------------------------HISTORIA---------------------------------------------- */
 
   .bodyHistoria {
-    position: relative;
-    top: 5vh;
+    margin-top: 15vh;
     background: #000000;
     background-size: cover;
     font-family: "Koulen", cursive;
+    background-image: url("images/15172169099255.jpg");
+    background-size: 25rem;
   }
 
   .historia {
@@ -444,26 +446,6 @@ footer img:hover {
     font-family: "Koulen", cursive;
     overflow-x: hidden;
     margin-top: 6vh;
-  }
-
-  .fotos img {
-    display: flex;
-
-    max-width: 500px;
-    max-height: auto;
-    opacity: 0.25;
-  }
-
-  .fotos img:hover {
-    opacity: 1;
-    border: #e60009 solid 0.1rem;
-  }
-
-  .col {
-    padding: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   /* ----------------------------CONTACTO------------------------------------------------- */
