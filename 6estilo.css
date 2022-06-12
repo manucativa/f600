@@ -35,10 +35,11 @@ header {
   padding-right: 1.5rem;
   display: inline-block;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .links li a {
+  
   color: white;
   text-decoration: none;
 }
@@ -57,6 +58,17 @@ ul.navbar-nav.links.container-fluid {
   align-content: center;
 }
 
+.navbar-brand{
+  color: #ffffff;
+  align-items: center;
+}
+
+.navbar-brand:hover{
+  color: #e60009;
+  text-decoration: overline #e60009;
+  
+}
+
 /* ----------------------------------------------------------------------------- */
 
 body {
@@ -69,8 +81,10 @@ body {
 .bodyPrincipal {
   background-image: url("images/15172169099255.jpg");
   background-size: 25rem;
+  background-repeat: repeat;
   margin-top: 5vh;
   font-family: "Koulen", cursive;
+  
 }
 
 .imagenPrincipal {
@@ -106,6 +120,7 @@ body {
   background-color: #e60009;
   border: none;
   text-align: center;
+  
 }
 
 .formulario form {
@@ -124,7 +139,9 @@ body {
 .bodyfichaTecnica {
   font-family: "Koulen", cursive;
   background: #e60009;
-  margin-bottom: 3rem;
+  background-image: url("images/15172169099255.jpg");
+  background-size: 25rem;
+  background-repeat: repeat;
 }
 
 .fichaTecnica {
@@ -134,9 +151,9 @@ body {
   grid-template-areas:
     "tabla video1"
     "tabla video2"
-    "tabla video3";
+    ;
   grid-template-columns: 50% 50%;
-  grid-template-rows: (3, auto);
+  grid-template-rows: (2, auto);
   gap: 2.5%;
 }
 
@@ -145,7 +162,7 @@ body {
   text-align: center;
   background-color: black;
   font-size: 1.25rem;
-  border: solid white;
+  border: solid #e60009;
 }
 
 .video1 {
@@ -154,10 +171,6 @@ body {
 
 .video2 {
   grid-area: video2;
-}
-
-.video3 {
-  grid-area: video3;
 }
 
 th {
@@ -170,11 +183,16 @@ th {
 /* ---------------------------FOTOS-------------------------------------------------- */
 
 .bodyFotos {
-  background: rgb(0, 0, 0);
+  background: #e60009;
   font-family: "Koulen", cursive;
   margin-top: 5vh;
   overflow-x: hidden;
+  background-image: url("images/15172169099255.jpg");
+  background-size: 25rem;
+  background-repeat: repeat;
 }
+
+
 
 /* ------------------------------HISTORIA----------------------------------------------- */
 
@@ -218,10 +236,11 @@ th {
 .imgHistoria {
   background: #e60009;
   display: flex;
-  align-content: center;
-  justify-content: right;
+  align-content:center;
+  justify-content:end;
   margin: 1rem;
   grid-area: imgHistoria;
+  border: solid 1rem black;
 }
 
 .bioHistoria {
@@ -392,11 +411,12 @@ footer img:hover {
   /* ----------------------------FICHA-TECNICA------------------------------------------------- */
 
   .bodyfichaTecnica {
-    position: relative;
-    top: 5vh;
     font-family: "Koulen", cursive;
     background: #e60009;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    background-image: url("images/15172169099255.jpg");
+    background-size: 25rem;
+    background-repeat: repeat;
   }
 
   .fichaTecnica {
@@ -407,10 +427,10 @@ footer img:hover {
       "tabla"
       " video1"
       " video2"
-      " video3";
+      ;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 5%;
+    gap: 2%;
   }
 
   .tabla {
@@ -420,7 +440,7 @@ footer img:hover {
     background-color: black;
     border: none;
     font-size: 1rem;
-    border: solid white;
+    border: solid #e60009;
   }
 
   .video1 {
@@ -433,29 +453,27 @@ footer img:hover {
     grid-area: video2;
   }
 
-  .video3 {
-    width: 100%;
-    grid-area: video3;
-  }
 
   /* ---------------------------FOTOS-------------------------------------------------- */
 
   .bodyFotos {
-    position: relative;
-    background: rgb(0, 0, 0);
+    
+    background: #e60009;
     font-family: "Koulen", cursive;
     overflow-x: hidden;
-    margin-top: 6vh;
+    background-image: url("images/15172169099255.jpg");
+    background-size: 25rem;
+    background-repeat: repeat;
+    
   }
 
   /* ----------------------------CONTACTO------------------------------------------------- */
 
   .bodyContacto {
-    position: relative;
-    top: 10vh;
     background-image: url("images/carlo-abarth.jpg");
     background-size: cover;
     font-family: "Koulen", cursive;
+    
   }
 
   .bodyFormulario {
@@ -468,11 +486,13 @@ footer img:hover {
 
   .formulario {
     position: relative;
+    margin-top: 5vh;
     grid-area: 1;
     color: #ffffff;
     background-color: #e60009;
     border: none;
     text-align: center;
+    
   }
 
   .formulario form {
@@ -483,6 +503,24 @@ footer img:hover {
   }
 
   .botones :hover {
+    opacity: 0.5;
+  }
+
+/* ----------------------------FOOTER------------------------------------------------- */
+
+  footer {
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    position: relative;
+    z-index: 999;
+  }
+  
+  footer img:hover {
     opacity: 0.5;
   }
 }
