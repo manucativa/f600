@@ -1,0 +1,31 @@
+.bodyContacto {
+    background-image: url("images/carlo-abarth.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Koulen", cursive;
+    .bodyFormulario {
+        display: grid;
+        grid-template-areas: "formulario formulario formulario";
+        grid-template-columns: auto auto 30%;
+        overflow-x: hidden;
+        .formulario {
+            position: relative;
+            height: 100vh;
+            grid-area: 3/3;
+            color: #ffffff;
+            background-color: #e60009;
+            border: none;
+            text-align: center;
+            form {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .botones :hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
