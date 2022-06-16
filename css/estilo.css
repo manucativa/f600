@@ -57,7 +57,7 @@ body {
   color: white; }
 
 .bodyPrincipal {
-  background-image: url("/images/15172169099255.jpg");
+  background-image: url("images/15172169099255.jpg");
   background-size: 25rem;
   background-repeat: repeat;
   margin-top: 5vh;
@@ -80,7 +80,8 @@ body {
     width: 95%;
     margin: 5% auto;
     display: grid;
-    grid-template-areas: "bioHistoria imgHistoria" "textoHistoria textoHistoria ";
+    grid-template-areas: "bioHistoria imgHistoria"
+ "textoHistoria textoHistoria ";
     grid-template-columns: 70% auto;
     grid-template-rows: 2, auto; }
     .bodyHistoria .historia .textoHistoria {
@@ -128,7 +129,8 @@ body {
     width: 90%;
     margin: 5% auto;
     display: grid;
-    grid-template-areas: "tabla video1" "tabla video2";
+    grid-template-areas: "tabla video1"
+ "tabla video2";
     grid-template-columns: 50% 50%;
     grid-template-rows: 2, auto;
     gap: 5%; }
@@ -236,7 +238,9 @@ body {
       width: 95%;
       margin: 5% auto;
       display: grid;
-      grid-template-areas: "bioHistoria" "imgHistoria" "textoHistoria";
+      grid-template-areas: "bioHistoria"
+ "imgHistoria"
+ "textoHistoria";
       grid-template-columns: auto;
       grid-template-rows: 3, auto; }
       .bodyHistoria .historia .bioHistoria {
@@ -285,7 +289,9 @@ body {
       width: 90%;
       margin: 5% auto;
       display: grid;
-      grid-template-areas: "tabla" " video1" " video2";
+      grid-template-areas: "tabla"
+ " video1"
+ " video2";
       grid-template-columns: auto;
       grid-template-rows: auto;
       gap: 2%; }
