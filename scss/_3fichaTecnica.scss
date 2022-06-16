@@ -9,8 +9,8 @@
         margin: 5% auto;
         display: grid;
         grid-template-areas:
-          "tabla video1"
-          "tabla video2";
+        "tabla video1"
+        "tabla video2";
         grid-template-columns: 50% 50%;
         grid-template-rows: (2, auto);
         gap: 5%;
@@ -20,6 +20,7 @@
             background-color: black;
             font-size: 1.25rem;
             border: solid #ffffff;
+            -webkit-text-stroke: 1px #000000;
             .video1 {
                 grid-area: video1;
             }             
