@@ -1,0 +1,16 @@
+KEYWORDS agregue las siguientes keywords:
+
+<meta name="keywords" content="FIAT, 600, FIAT600, ABARTH, KARL ABARTH, AMRMANDO SCAGLIARINI">
+
+DESCRIPCION agregue la siguiente descripcion:
+
+<meta name="description" content="Sitio dedicado exclusivamente al Fiat600 Abarth">
+
+TITULOS modifique los titulos anteriores por los siguientes:
+
+<title>Te damos la bienvenida a Abarth</title>
+<title>Abarth - La historia</title>
+<title>Detalles técnicos del 600 Abarth</title>
+<title>Galeria de imágenes</title>
+<title>Contactate con nosotros</title>
+
