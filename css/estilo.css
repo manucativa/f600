@@ -57,7 +57,7 @@ body {
   color: white; }
 
 .bodyPrincipal {
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 30rem;
   background-repeat: repeat;
   margin-top: 5vh;
@@ -74,7 +74,7 @@ body {
   background: #000000;
   background-size: cover;
   font-family: "Koulen", cursive;
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 25rem; }
   .bodyHistoria .historia {
     width: 95%;
@@ -122,7 +122,7 @@ body {
 .bodyfichaTecnica {
   font-family: "Koulen", cursive;
   background: #e60009;
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 25rem;
   background-repeat: repeat; }
   .bodyfichaTecnica .fichaTecnica {
@@ -155,12 +155,12 @@ body {
   font-family: "Koulen", cursive;
   margin-top: 5vh;
   overflow-x: hidden;
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 25rem;
   background-repeat: repeat; }
 
 .bodyContacto {
-  background-image: url("images/carlo-abarth.jpg");
+  background-image: url("/images/carlo-abarth.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Koulen", cursive; }
@@ -215,7 +215,7 @@ body {
     flex-direction: column; }
   /* -----------------------------INDEX------------------------------------------------ */
   .bodyPrincipal {
-    background-image: url("images/15172169099255.jpg");
+    background-image: url("/images/15172169099255.jpg");
     background-size: 25rem;
     font-family: "Koulen", cursive;
     overflow-x: hidden; }
@@ -229,7 +229,7 @@ body {
   /* -------------------------------HISTORIA---------------------------------------------- */
   .bodyHistoria {
     margin-top: 15vh;
-    background-image: url("images/15172169099255.jpg");
+    background-image: url("/images/15172169099255.jpg");
     background-size: cover;
     font-family: "Koulen", cursive;
     background-size: cover;
@@ -282,7 +282,7 @@ body {
     font-family: "Koulen", cursive;
     background: #e60009;
     margin-top: 2rem;
-    background-image: url("images/15172169099255.jpg");
+    background-image: url("/images/15172169099255.jpg");
     background-size: 25rem;
     background-repeat: repeat; }
     .bodyfichaTecnica .fichaTecnica {
@@ -314,11 +314,11 @@ body {
     background: #e60009;
     font-family: "Koulen", cursive;
     overflow-x: hidden;
-    background-image: url("images/15172169099255.jpg");
+    background-image: url("/images/15172169099255.jpg");
     background-size: cover; }
   /* ----------------------------CONTACTO------------------------------------------------- */
   .bodyContacto {
-    background-image: url("images/carlo-abarth.jpg");
+    background-image: url("/images/carlo-abarth.jpg");
     background-size: auto;
     font-family: "Koulen", cursive; }
     .bodyContacto .bodyFormulario {
