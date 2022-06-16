@@ -1,15 +1,17 @@
 .bodyPrincipal {
-    background-image: url("images/15172169099255.jpg");
+    background-image: url("/images/15172169099255.jpg");
     background-size: 25rem;
+    background-repeat: repeat;
+    margin-top: 5vh;
     font-family: "Koulen", cursive;
-    overflow-x: hidden;
     .imagenPrincipal {
-    min-height: 100vh;
-        img {
-            position: relative;
-            top: 20vh;
-            width: 100vh;
-            margin: 2vw -26vw;
+        text-align: center;
+        min-height: 100vh;
+        .imgAbarth {
+            width: 90%;
+            height: auto;
         }
     }
 }
+
+
