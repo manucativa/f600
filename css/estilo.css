@@ -27,7 +27,7 @@ header {
       padding-right: 1.5rem;
       display: inline-block;
       text-align: center;
-      font-size: 1.5rem; }
+      font-size: 1.25rem; }
       header .links li a {
         color: white;
         text-decoration: none; }
@@ -74,7 +74,7 @@ body {
   background: #000000;
   background-size: cover;
   font-family: "Koulen", cursive;
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 25rem; }
   .bodyHistoria .historia {
     width: 95%;
@@ -121,7 +121,7 @@ body {
 .bodyfichaTecnica {
   font-family: "Koulen", cursive;
   background: #e60009;
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 25rem;
   background-repeat: repeat; }
   .bodyfichaTecnica .fichaTecnica {
@@ -131,13 +131,13 @@ body {
     grid-template-areas: "tabla video1" "tabla video2";
     grid-template-columns: 50% 50%;
     grid-template-rows: 2, auto;
-    gap: 2.5%; }
+    gap: 5%; }
     .bodyfichaTecnica .fichaTecnica .tabla {
       grid-area: tabla;
       text-align: center;
       background-color: black;
       font-size: 1.25rem;
-      border: solid #e60009; }
+      border: solid #ffffff; }
       .bodyfichaTecnica .fichaTecnica .tabla .video1 {
         grid-area: video1; }
       .bodyfichaTecnica .fichaTecnica .tabla .video2 {
@@ -145,20 +145,19 @@ body {
       .bodyfichaTecnica .fichaTecnica .tabla th {
         font-size: 2rem;
         color: #ffffff;
-        text-align: center;
-        -webkit-text-stroke: 0.01px #000000; }
+        text-align: center; }
 
 .bodyFotos {
   background: #e60009;
   font-family: "Koulen", cursive;
   margin-top: 5vh;
   overflow-x: hidden;
-  background-image: url("images/15172169099255.jpg");
+  background-image: url("/images/15172169099255.jpg");
   background-size: 25rem;
   background-repeat: repeat; }
 
 .bodyContacto {
-  background-image: url("images/carlo-abarth.jpg");
+  background-image: url("/images/carlo-abarth.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Koulen", cursive; }

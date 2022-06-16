@@ -1,7 +1,7 @@
 .bodyfichaTecnica {
     font-family: "Koulen", cursive;
     background: #e60009;
-    background-image: url("images/15172169099255.jpg");
+    background-image: url("/images/15172169099255.jpg");
     background-size: 25rem;
     background-repeat: repeat;
     .fichaTecnica {
@@ -13,13 +13,13 @@
           "tabla video2";
         grid-template-columns: 50% 50%;
         grid-template-rows: (2, auto);
-        gap: 2.5%;
+        gap: 5%;
         .tabla {
             grid-area: tabla;
             text-align: center;
             background-color: black;
             font-size: 1.25rem;
-            border: solid #e60009;
+            border: solid #ffffff;
             .video1 {
                 grid-area: video1;
             }             
@@ -30,7 +30,6 @@
                 font-size: 2rem;
                 color: #ffffff;
                 text-align: center;
-                -webkit-text-stroke: 0.01px #000000;
             }
         }
     }
