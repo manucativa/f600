@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box; }
+
+/* ----------------------------HEADER------------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: black;
+  z-index: 999; }
+  header .logoPrincipal {
+    display: flex;
+    align-content: center;
+    margin-left: 2rem; }
+  header .links {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 1rem; }
+    header .links li {
+      padding-right: 1.5rem;
+      display: inline-block;
+      text-align: center;
+      font-size: 1.25rem; }
+      header .links li a {
+        color: white;
+        text-decoration: none; }
+        header .links li a:hover {
+          color: #e60009;
+          text-decoration: overline #e60009; }
+
+ul.navbar-nav.links.container-fluid {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+
+.navbar-brand {
+  color: #ffffff;
+  align-items: center; }
+
+.navbar-brand:hover {
+  color: #e60009;
+  text-decoration: overline #e60009; }
+
+/* --------------------------------BODY--------------------------------------------- */
+body {
+  font-family: "Koulen", cursive;
+  color: white; }
+
+.bodyPrincipal {
+  background-image: url("/images/15172169099255.jpg");
+  background-size: 30rem;
+  background-repeat: repeat;
+  margin-top: 5vh;
+  font-family: "Koulen", cursive; }
+  .bodyPrincipal .imagenPrincipal {
+    text-align: center;
+    min-height: 100vh; }
+    .bodyPrincipal .imagenPrincipal .imgAbarth {
+      width: 90%;
+      height: auto; }
+
+.bodyHistoria {
+  margin-top: 15vh;
+  background: #000000;
+  background-size: cover;
+  font-family: "Koulen", cursive;
+  background-image: url("/images/15172169099255.jpg");
+  background-size: 25rem; }
+  .bodyHistoria .historia {
+    width: 95%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas: "bioHistoria imgHistoria" "textoHistoria textoHistoria ";
+    grid-template-columns: 70% auto;
+    grid-template-rows: 2, auto; }
+    .bodyHistoria .historia .textoHistoria {
+      padding: 1rem;
+      margin: 1rem;
+      grid-area: textoHistoria;
+      text-align: justify;
+      font-size: 1.25rem;
+      color: white;
+      background-color: #000000; }
+      .bodyHistoria .historia .textoHistoria h1 {
+        background: #e60009;
+        text-align: center;
+        -webkit-text-stroke: 2px #000000;
+        font-size: 3rem; }
+  .bodyHistoria .imgHistoria {
+    background: #e60009;
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    margin: 1rem;
+    grid-area: imgHistoria;
+    border: solid 1rem black; }
+  .bodyHistoria .bioHistoria {
+    padding: 1rem;
+    grid-area: bioHistoria;
+    margin: 1rem;
+    text-align: justify;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #000000; }
+    .bodyHistoria .bioHistoria h1 {
+      text-align: center;
+      background: #e60009;
+      -webkit-text-stroke: 2px #000000;
+      font-size: 3rem; }
+
+.bodyfichaTecnica {
+  font-family: "Koulen", cursive;
+  background: #e60009;
+  background-image: url("/images/15172169099255.jpg");
+  background-size: 25rem;
+  background-repeat: repeat; }
+  .bodyfichaTecnica .fichaTecnica {
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas: "tabla video1" "tabla video2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2, auto;
+    gap: 5%; }
+    .bodyfichaTecnica .fichaTecnica .tabla {
+      grid-area: tabla;
+      text-align: center;
+      background-color: black;
+      font-size: 1.25rem;
+      border: solid #ffffff;
+      -webkit-text-stroke: 1px #000000; }
+      .bodyfichaTecnica .fichaTecnica .tabla .video1 {
+        grid-area: video1; }
+      .bodyfichaTecnica .fichaTecnica .tabla .video2 {
+        grid-area: video2; }
+      .bodyfichaTecnica .fichaTecnica .tabla th {
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center; }
+
+.bodyFotos {
+  background: #e60009;
+  font-family: "Koulen", cursive;
+  margin-top: 5vh;
+  overflow-x: hidden;
+  background-image: url("/images/15172169099255.jpg");
+  background-size: 25rem;
+  background-repeat: repeat; }
+
+.bodyContacto {
+  background-image: url("/images/carlo-abarth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Koulen", cursive; }
+  .bodyContacto .bodyFormulario {
+    display: grid;
+    grid-template-areas: "formulario formulario formulario";
+    grid-template-columns: auto auto 30%;
+    overflow-x: hidden; }
+    .bodyContacto .bodyFormulario .formulario {
+      position: relative;
+      height: 100vh;
+      grid-area: 3/3;
+      color: #ffffff;
+      background-color: #e60009;
+      border: none;
+      text-align: center; }
+      .bodyContacto .bodyFormulario .formulario form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .bodyContacto .bodyFormulario .formulario .botones :hover {
+        opacity: 0.5; }
+
+@media only screen and (max-width: 600px) {
+  /* ----------------------------HEADER------------------------------------------------- */
+  header {
+    max-width: 100vw; }
+  .logoPrincipal {
+    display: flex;
+    align-content: center;
+    margin-left: 1rem; }
+  .links {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 1rem; }
+  .links li {
+    padding-right: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem; }
+  .links li a {
+    color: white;
+    text-decoration: none; }
+  .links li a:hover {
+    color: #e60009;
+    text-decoration: none; }
+  ul.navbar-nav.links.container-fluid {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  /* -----------------------------INDEX------------------------------------------------ */
+  .bodyPrincipal {
+    background-image: url("/images/15172169099255.jpg");
+    background-size: 25rem;
+    font-family: "Koulen", cursive;
+    overflow-x: hidden; }
+    .bodyPrincipal .imagenPrincipal {
+      min-height: 100vh; }
+      .bodyPrincipal .imagenPrincipal img {
+        position: relative;
+        top: 20vh;
+        width: 100vh;
+        margin: 2vw -26vw; }
+  /* -------------------------------HISTORIA---------------------------------------------- */
+  .bodyHistoria {
+    margin-top: 15vh;
+    background-image: url("/images/15172169099255.jpg");
+    background-size: cover;
+    font-family: "Koulen", cursive;
+    background-size: cover;
+    background-size: 25rem; }
+    .bodyHistoria .historia {
+      width: 95%;
+      margin: 5% auto;
+      display: grid;
+      grid-template-areas: "bioHistoria" "imgHistoria" "textoHistoria";
+      grid-template-columns: auto;
+      grid-template-rows: 3, auto; }
+      .bodyHistoria .historia .bioHistoria {
+        padding: 1rem;
+        grid-area: bioHistoria;
+        margin: 1rem;
+        text-align: justify;
+        font-size: 1rem;
+        color: white;
+        background-color: #000000; }
+        .bodyHistoria .historia .bioHistoria h1 {
+          text-align: center;
+          background: #e60009;
+          -webkit-text-stroke: 2px #000000;
+          font-size: 2rem; }
+      .bodyHistoria .historia .imgHistoria {
+        background: #e60009;
+        display: flex;
+        align-content: center;
+        justify-content: end;
+        margin: 1rem;
+        grid-area: imgHistoria;
+        border: solid 1rem black; }
+      .bodyHistoria .historia .textoHistoria {
+        padding: 1rem;
+        margin: 1rem;
+        grid-area: textoHistoria;
+        text-align: justify;
+        font-size: 1rem;
+        color: white;
+        background-color: #000000; }
+        .bodyHistoria .historia .textoHistoria h1 {
+          text-align: center;
+          background: #e60009;
+          -webkit-text-stroke: 2px #000000;
+          font-size: 2rem; }
+  /* ----------------------------FICHA-TECNICA------------------------------------------------- */
+  .bodyfichaTecnica {
+    font-family: "Koulen", cursive;
+    background: #e60009;
+    margin-top: 2rem;
+    background-image: url("/images/15172169099255.jpg");
+    background-size: 25rem;
+    background-repeat: repeat; }
+    .bodyfichaTecnica .fichaTecnica {
+      width: 90%;
+      margin: 5% auto;
+      display: grid;
+      grid-template-areas: "tabla" " video1" " video2";
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      gap: 2%; }
+      .bodyfichaTecnica .fichaTecnica .tabla {
+        width: 100%;
+        grid-area: tabla;
+        text-align: center;
+        background-color: black;
+        border: none;
+        font-size: 1rem;
+        border: solid #ffffff; }
+      .bodyfichaTecnica .fichaTecnica .video1 {
+        width: 100%;
+        grid-area: video1; }
+      .bodyfichaTecnica .fichaTecnica .video2 {
+        width: 100%;
+        grid-area: video2; }
+  /* ---------------------------FOTOS-------------------------------------------------- */
+  .bodyFotos {
+    background: #e60009;
+    font-family: "Koulen", cursive;
+    overflow-x: hidden;
+    background-image: url("/images/15172169099255.jpg");
+    background-size: cover; }
+  /* ----------------------------CONTACTO------------------------------------------------- */
+  .bodyContacto {
+    background-image: url("/images/carlo-abarth.jpg");
+    background-size: auto;
+    font-family: "Koulen", cursive; }
+    .bodyContacto .bodyFormulario {
+      display: grid;
+      grid-template-areas: "formulario formulario formulario";
+      grid-template-columns: 50% auto auto;
+      overflow-x: hidden;
+      align-content: center; }
+      .bodyContacto .bodyFormulario .formulario {
+        position: relative;
+        margin-top: 5vh;
+        grid-area: 1;
+        color: #ffffff;
+        background-color: #e60009;
+        border: none;
+        text-align: center; }
+        .bodyContacto .bodyFormulario .formulario form {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+          .bodyContacto .bodyFormulario .formulario form .botones :hover {
+            opacity: 0.5; }
+  /* ----------------------------FOOTER------------------------------------------------- */
+  footer {
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    position: relative;
+    z-index: 999; }
+  footer img:hover {
+    opacity: 0.5; } }
+
+/* ---------------------------FOOTER-------------------------------------------------- */
+footer {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  position: relative;
+  z-index: 999; }
+  footer img:hover {
+    opacity: 0.5; }
