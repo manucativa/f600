@@ -6,6 +6,11 @@
 
   /* ----------------------------HEADER------------------------------------------------- */
 
+@mixin hover($color, $text-decoration) {
+    color: $color;
+    text-decoration: $text-decoration;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -35,8 +40,7 @@ header {
                 color: white;
                 text-decoration: none;
                 &:hover {
-                    color: #e60009;
-                    text-decoration: overline #e60009;
+                    @include hover(#e60009, overline #e60009)
                 }
             }
         }
@@ -58,8 +62,7 @@ ul.navbar-nav.links.container-fluid {
 }
 
 .navbar-brand:hover {
-    color: #e60009;
-    text-decoration: overline #e60009;
+    @include hover(#e60009, overline #e60009)
 }
 
 /* --------------------------------BODY--------------------------------------------- */
