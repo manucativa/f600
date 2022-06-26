@@ -66,7 +66,7 @@ body {
     text-align: center;
     min-height: 100vh; }
     .bodyPrincipal .imagenPrincipal .imgAbarth {
-      width: 90%;
+      width: 100%;
       height: auto; }
   .bodyPrincipal h1 {
     text-align: center;
@@ -230,9 +230,18 @@ body {
       min-height: 100vh; }
       .bodyPrincipal .imagenPrincipal img {
         position: relative;
-        top: 20vh;
+        top: 10vh;
         width: 100vh;
         margin: 2vw -26vw; }
+    .bodyPrincipal h1 {
+      text-align: center;
+      background: #e60009;
+      -webkit-text-stroke: 1.5px #000000;
+      font-size: 2rem;
+      width: 100%;
+      margin-left: 0%; }
+    .bodyPrincipal .tituloPrincipal {
+      margin-top: 15%; }
   /* -------------------------------HISTORIA---------------------------------------------- */
   .bodyHistoria {
     margin-top: 15vh;
@@ -322,7 +331,7 @@ body {
   /* ----------------------------CONTACTO------------------------------------------------- */
   .bodyContacto {
     background-image: url("/images/carlo-abarth.jpg");
-    background-size: auto;
+    background-size: cover;
     font-family: "Koulen", cursive; }
     .bodyContacto .bodyFormulario {
       height: 100vh;
@@ -330,7 +339,8 @@ body {
       grid-template-areas: "formulario formulario formulario";
       grid-template-columns: 50% auto auto;
       overflow-x: hidden;
-      align-content: center; }
+      align-content: center;
+      overflow-y: hidden; }
       .bodyContacto .bodyFormulario .formulario {
         position: relative;
         margin-top: 5vh;
